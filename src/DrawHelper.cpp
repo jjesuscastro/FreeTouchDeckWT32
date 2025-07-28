@@ -199,7 +199,7 @@ void drawButtonRowCol(uint8_t page, uint8_t row, uint8_t col)
                 drawTransparent = true;
             }
         }
-        outlineColor = TFT_WHITE;
+        // outlineColor = TFT_WHITE;
     }
 
     tft.setFreeFont(LABEL_FONT);
@@ -403,6 +403,43 @@ uint32_t usedPSRAM()
     return ESP.getPsramSize() - ESP.getFreePsram();
 }
 
+const uint8_t NO_BT[16] PROGMEM = {
+  0b00011000,
+  0b00101000,
+  0b01001000,
+  0b10001000,
+  0b10001000,
+  0b01001001,
+  0b00101010,
+  0b00011100,
+  0b00011100,
+  0b00101010,
+  0b01001001,
+  0b10001000,
+  0b10001000,
+  0b01001000,
+  0b00101000,
+  0b00011000,
+};
+
+const uint8_t BT[16] PROGMEM = {
+  0b00011000,
+  0b00101000,
+  0b01001000,
+  0b10001000,
+  0b10001000,
+  0b01001001,
+  0b00101010,
+  0b10011101,
+  0b10011101,
+  0b00101010,
+  0b01001001,
+  0b10001000,
+  0b10001000,
+  0b01001000,
+  0b00101000,
+  0b00011000,
+};
 
 /**
  * @brief This function displays some basic status information at the top of the screen.
@@ -421,10 +458,10 @@ void drawTopStatusBar(bool force_redraw = true)
 
 #ifdef TOP_STATUS_BAR_SHOW_BT
     if (bleKeyboard.isConnected()) {
-        snprintf(buffer, 64, "BT Connected");
+        tft.drawBitmap(KEY_MARGIN_X, 3, BT, 8, 16, TFT_WHITE);
     }
     else {
-        snprintf(buffer, 64, "No BT");
+        tft.drawBitmap(KEY_MARGIN_X, 3, NO_BT, 8, 16, TFT_WHITE);
     }
     comparison = strncmp(buffer, topStatusBarTextLeft, sizeof(topStatusBarTextLeft));
 
@@ -446,7 +483,7 @@ void drawTopStatusBar(bool force_redraw = true)
     if (comparison != 0 || force_redraw) {
         tft.fillRect(SCREEN_WIDTH / 3, 0, SCREEN_WIDTH / 3, KEY_MARGIN_Y_TOP, TFT_BLACK);
         tft.setTextFont(2);
-        tft.setTextSize(2);
+        tft.setTextSize(1);
         tft.setCursor(SCREEN_WIDTH / 2 - tft.textWidth(buffer, 2) / 2, 0);
         tft.setTextColor(TFT_WHITE, TFT_BLACK);
         tft.print(buffer);

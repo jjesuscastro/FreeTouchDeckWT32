@@ -106,8 +106,8 @@ extern const char* versionnumber;
 #ifdef ENABLE_TOP_STATUS_BAR
 #define TOP_STATUS_BAR_HEIGHT 20
 #define TOP_STATUS_BAR_SHOW_BT
-//#define TOP_STATUS_BAR_SHOW_MENU
-#define TOP_STATUS_BAR_SHOW_V
+#define TOP_STATUS_BAR_SHOW_MENU
+// #define TOP_STATUS_BAR_SHOW_V
 #else
 #define TOP_STATUS_BAR_HEIGHT 0
 #endif
