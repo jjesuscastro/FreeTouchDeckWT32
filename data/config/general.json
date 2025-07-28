@@ -1,9 +1,9 @@
 {
-	"menubuttoncolor": "#00efcb",
+	"menubuttoncolor": "#000000",
 	"functionbuttoncolor": "#000000",
 	"latchcolor": "#fe0149",
 	"background": "#000000",
-	"sleepenable": true,
+	"sleepenable": false,
 	"sleeptimer": 10,
 	"usbcommsenable": false,
 	"beep": true,

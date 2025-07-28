@@ -1,46 +1,46 @@
 {
-  "menuname":"VSCode", 
+  "menuname":"Menu_7", 
   "button11": {
-    "logo": "VSC_Run.bmp",
+    "logo": "blank.bmp",
     "latch": false,
     "latchlogo": "",
     "actionarray": [
-      "6",
+      "0",
       "0",
       "0"
     ],
     "valuearray": [
-      "5",
+      "0",
       "0",
       "0"
     ]
   },
-    "button12": {
-    "logo": "VSC_Stop.bmp",
+  "button12": {
+    "logo": "blank.bmp",
     "latch": false,
     "latchlogo": "",
     "actionarray": [
-      "5",
-      "6",
-      "0"
-    ],
-    "valuearray": [
-      "2",
-      "5",
-      "0"
-    ]
-  },
-    "button13": {
-    "logo": "VSC_TglBreakpoint.bmp",
-    "latch": false,
-    "latchlogo": "",
-    "actionarray": [
-      "6",
+      "0",
       "0",
       "0"
     ],
     "valuearray": [
-      "9",
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "button13": {
+    "logo": "blank.bmp",
+    "latch": false,
+    "latchlogo": "",
+    "actionarray": [
+      "0",
+      "0",
+      "0"
+    ],
+    "valuearray": [
+      "0",
       "0",
       "0"
     ]
@@ -75,62 +75,62 @@
       "0"
     ]
   },
-    "button21": {
-    "logo": "VSC_StepInto.bmp",
+  "button21": {
+    "logo": "blank.bmp",
     "latch": false,
     "latchlogo": "",
     "actionarray": [
-      "6",
+      "0",
       "0",
       "0"
     ],
     "valuearray": [
-      "11",
+      "0",
       "0",
       "0"
     ]
   },
   "button22": {
-    "logo": "VSC_StepOut.bmp",
+    "logo": "blank.bmp",
     "latch": false,
     "latchlogo": "",
     "actionarray": [
-      "5",
-      "6",
-      "0"
-    ],
-    "valuearray": [
-      "2",
-      "11",
-      "0"
-    ]
-  },
-  "button23": {
-    "logo": "VSC_StepOver.bmp",
-    "latch": false,
-    "latchlogo": "",
-    "actionarray": [
-      "6",
+      "0",
       "0",
       "0"
     ],
     "valuearray": [
-      "10",
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "button23": {
+    "logo": "blank.bmp",
+    "latch": false,
+    "latchlogo": "",
+    "actionarray": [
+      "0",
+      "0",
+      "0"
+    ],
+    "valuearray": [
+      "0",
       "0",
       "0"
     ]
   },
   "button24": {
-    "logo": "playpause.bmp",
+    "logo": "blank.bmp",
     "latch": false,
     "latchlogo": "",
     "actionarray": [
-      "3",
+      "0",
       "0",
       "0"
     ],
     "valuearray": [
-      "4",
+      "0",
       "0",
       "0"
     ]
@@ -151,46 +151,46 @@
     ]
   },
   "button31": {
-    "logo": "volumedown.bmp",
+    "logo": "blank.bmp",
     "latch": false,
     "latchlogo": "",
     "actionarray": [
-      "3",
+      "0",
       "0",
       "0"
     ],
     "valuearray": [
-      "2",
+      "0",
       "0",
       "0"
     ]
   },
   "button32": {
-    "logo": "volumeup.bmp",
+    "logo": "blank.bmp",
     "latch": false,
     "latchlogo": "",
     "actionarray": [
-      "3",
+      "0",
       "0",
       "0"
     ],
     "valuearray": [
-      "3",
+      "0",
       "0",
       "0"
     ]
   },
   "button33": {
-    "logo": "nosound.bmp",
+    "logo": "blank.bmp",
     "latch": false,
     "latchlogo": "",
     "actionarray": [
-      "3",
+      "0",
       "0",
       "0"
     ],
     "valuearray": [
-      "1",
+      "0",
       "0",
       "0"
     ]
